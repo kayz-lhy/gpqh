@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/gpqh-user/pom.xml" />
+        <option value="$PROJECT_DIR$/gpqh-main/pom.xml" />
+        <option value="$PROJECT_DIR$/gpqh-common/pom.xml" />
       </list>
     </option>
   </component>

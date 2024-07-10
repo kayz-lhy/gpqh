@@ -7,10 +7,10 @@
         <artifactId>GPQH</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>gpqh-main</artifactId>
+    <artifactId>gpqh-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gpqh-main</name>
-    <description>gpqh-main</description>
+    <name>gpqh-common</name>
+    <description>gpqh-common</description>
     <url/>
     <licenses>
         <license/>
@@ -37,19 +37,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.gpqh</groupId>
-            <artifactId>gpqh-user</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
         </dependency>
     </dependencies>
 

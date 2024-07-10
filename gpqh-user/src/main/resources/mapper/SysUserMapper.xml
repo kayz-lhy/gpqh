@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gpqh.user.mapper.SysUserMapper">
+
+    <insert id="save">
+        INSERT INTO sys_user
+        (username, password, nickname, is_deleted, created_by, created_at, role)
+        VALUES
+        (#{username}, #{password}, #{nickname}, #{isDeleted},#{createdBy}, #{createdAt}, #{role})
+    </insert>
+    <select id="getAllUserName" resultType="java.lang.String">
+        SELECT username
+        FROM sys_user
+        WHERE is_deleted = 0
+    </select>
+    <select id="getByUsername" resultType="com.gpqh.user.entity.SysUser">
+        SELECT * FROM sys_user
+        WHERE is_deleted=0 AND username = #{username}
+    </select>
+</mapper>
